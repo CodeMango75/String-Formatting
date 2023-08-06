@@ -1,0 +1,67 @@
+#String Concatenation - Basic
+name = "Talaal Yousoof"
+age = 27
+country = "Pakistan"
+
+print("My name is " + name, "I am " + str(age) + " years Old.",
+      "I am a resident of" + country)
+
+#String Concatenation - Using .format() function
+item = "Laptop"
+price = 125000
+quantity = 7
+total_cost = price * quantity
+
+print(
+    """I bough a {} of {} quantities at a price of Rs {} each. The total cost incurred was Rs {}"""
+    .format(item, quantity, price, total_cost))
+
+print("\n")
+
+# F Interporelation String Formatting
+city = "Karachi"
+temperature = 34
+
+print(
+    f"""The temperature in the city {city} is {temperature} degree celcius""")
+
+print("\n")
+
+#String Formatting Using %
+first_name = "Talaal"
+last_name = "Yousoof"
+birth_year = 1995
+current_year = 2023
+age = current_year - birth_year
+print("My name is %s %s and I am %d years old" % (first_name, last_name, age))
+print("\n")
+
+# = ===================================================
+
+#String Concatenation
+
+product = "NVIDIA RTX 3060i"
+discount = 0.15
+original_price = 150000
+discounted_price = original_price - (original_price * discount)
+
+print("\n")
+
+# String Formatting Using + sign
+print("The product " + product + " is available on a discount of" +
+      str(discount) + " . The original price is Rs" + str(original_price) +
+      ". So I bought it at a discounted price of Rs" + str(discounted_price))
+
+print("\n")
+
+# String Formatting using .format
+print(
+    """{} which originally costed {} is now available at a discounted price of Rs{}. The discount rate applied is {}"""
+    .format(product, original_price, discounted_price, discount))
+
+print("\n")
+
+# String Concatenation Using the F Interpolation
+print(
+    f"""{product} which originally costed {original_price} is now available at a discounted price of Rs{discounted_price}. The discount rate applied is {discount}"""
+)
